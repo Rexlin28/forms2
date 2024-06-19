@@ -1,0 +1,144 @@
+/* Estilos generales del cuerpo */
+@font-face {
+    font-family: Karlita;
+    src: url(/assets/fonts/static/Karla-Bold.ttf);
+}
+
+body {
+    font-family: Karlita;
+    background-color: #d0f2eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    
+    margin: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333cc;
+}
+
+.nombres {
+    display: flex;
+    gap: 20px;
+    
+}
+.nombres input {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+.nombres div{
+   flex:1;
+}
+
+#email {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#radiales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #676767;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+}
+
+#query-type {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+
+#query-type #radiales:last-child {
+    margin-right: 0;
+    
+   
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #068271;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #059b87;
+}
+
+.consentir {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.consentir input {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 700px) {
+    form {
+        width: 90%; /* Ajusta el ancho del formulario */
+        padding: 4%; /* Reduce el padding para espaciar mejor en dispositivos móviles */
+    }
+    .nombres {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nombres div {
+        width: 100%;
+    }
+
+    #query-type {
+        flex-direction: column;
+
+    }
+
+    #query-type .radio-box {
+        margin-left: 10px;
+    }
+}
+
